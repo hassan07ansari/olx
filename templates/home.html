@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carso - Know Your Car Prices</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #00ffff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00ffff;
+        }
+
+        main .container {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            margin: 20px 0;
+            color: #00ffff;
+        }
+
+        main p {
+            margin: 20px 0;
+            color: #b0b0b0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #333;
+            color: #00ffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #00ffff;
+            color: #333;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            text-align: center;
+            color: #757575;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .fade-in {
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Carso</h1>
+            <nav>
+                <ul>
+                    <li><a href="#know-prices">Know Your Car Prices</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>Welcome to Carso</h2>
+                <p>Your trusted platform to know the prices of second-hand cars.</p>
+                <p>Get accurate and reliable car price evaluations instantly.</p>
+            </div>
+        </section>
+
+        <section id="know-prices" class="fade-in">
+            <div class="container">
+                <h2>Know Your Car Prices</h2>
+                <p>Click below to get an instant price evaluation for your car.</p>
+                <a href="#" class="button">Get Started</a>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have any questions? Get in touch with us!</p>
+                <a href="#" class="button">Contact Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Carso. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
