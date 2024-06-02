@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Result - Carso</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #1e1e1e;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+        }
+
+        h1 {
+            color: #00ffff;
+            margin-bottom: 20px;
+        }
+
+        .car {
+            width: 100px;
+            height: 50px;
+            background-color: #00ffff;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            margin: 0 auto 20px;
+            animation: drive 2s linear infinite;
+        }
+
+        .car::before, .car::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            width: 15px;
+            height: 15px;
+            background-color: #00ffff;
+            border-radius: 50%;
+        }
+
+        .car::before {
+            left: 10px;
+        }
+
+        .car::after {
+            right: 10px;
+        }
+
+        .price {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes drive {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Price Result</h1>
+        <div class="car"></div>
+        <div class="price" id="carPrice">$0.00</div>
+    </div>
+
+    <script>
+        // This script is for demonstration purposes only. The actual price will be set by the backend.
+        document.getElementById('carPrice').innerText = '$' + (Math.random() * 10000).toFixed(2);
+    </script>
+</body>
+</html>
